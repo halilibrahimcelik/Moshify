@@ -5,6 +5,11 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Typography*/
 html {
   font-size: 62.5%;
@@ -155,4 +160,87 @@ a {
   background: #f3f9fa;
   justify-content: center;
   align-items: center;
+}
+
+/*Buttons*/
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.btn--header {
+  background: var(--color-accent);
+  width: 40rem;
+  height: 7rem;
+}
+.btn--header:hover {
+  background: #f25f39;
+}
+.btn--search {
+  background: var(--color-accent);
+  width: fit-content;
+  height: 6rem;
+}
+.btn--search:hover {
+  background: #f25f39;
+}
+.btn--card {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+.btn--card:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+.btn--footer {
+  color: #fff;
+  width: 32rem;
+
+  background: var(--color-secondary);
+  justify-content: center;
+}
+.btn--footer:hover {
+  background: #00c8eb;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs*/
+.input {
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 1.5rem 3.5rem;
+  color: var(--color-headings);
+  font-size: 2rem;
+  box-shadow: 0 0 10px 0.5px rgba(77, 74, 74, 0.596);
+}
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
