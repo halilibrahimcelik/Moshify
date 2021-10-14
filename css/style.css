@@ -700,9 +700,25 @@ a {
 /*Plan Blocks*/
 
 .block-plans .grid {
-  gap: 10 rem 4rem;
+  gap: 10rem 4rem;
 }
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/*Feature Blocks*/
+.block-feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.block-feature__heading {
+  margin: 1rem 0;
+}
+.block-feature__image {
+  width: 100%;
+}
+
+.block-feature:first-of-type {
+  margin-top: 6rem;
 }
