@@ -63,7 +63,7 @@ p {
     font-size: 2.4rem;
   }
   body {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 /* Links*/
@@ -578,6 +578,10 @@ a {
   background: #000;
   color: #7b858b;
 }
+.block--footer {
+  background: #232323;
+  color: #919191;
+}
 .block--dark .block__heading {
   color: #fff;
 }
@@ -757,5 +761,79 @@ a {
   }
   .showcase picture {
     justify-self: end;
+  }
+}
+
+/*Footer Block*/
+.footer {
+  margin-top: 3rem;
+}
+.footer h3 {
+  color: white;
+  font-weight: 600;
+}
+.footer__content--list {
+  padding: 2rem;
+  border-bottom: 1px solid rgb(104, 104, 104);
+}
+.footer__logo {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.footer__logo--text {
+  color: #fff;
+  opacity: 0.3;
+  font-size: 2.1rem;
+}
+
+.footer__logo img {
+  /*TODO: Consider refactoring this and apply this to all images*/
+  text-align: center;
+  width: 100%;
+  max-width: 230px;
+}
+.footer a {
+  color: #919191;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #ebebeb;
+}
+.footer__content--list li {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  /* .footer:nth-of-type(even) .footer__content {
+    order: 2;
+  } */
+
+  .footer__logo {
+    order: -1;
+  }
+  .footer {
+    grid-template-columns: auto 1fr;
+
+    justify-items: center;
+  }
+  .footer__content {
+    display: flex;
+  }
+  .footer__icon {
+    display: none;
+  }
+  .footer__content--list .collapsible__content {
+    max-height: 100%;
+    width: auto;
+    opacity: 1;
+  }
+
+  .footer__content--list {
+    border: 0;
+  }
+  .footer__content--list h3 {
+    font-size: 1.6rem;
+  }
+  .footer__logo--text {
+    font-size: 1.5rem;
   }
 }
