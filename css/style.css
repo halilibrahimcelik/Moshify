@@ -88,7 +88,7 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
-@media screen (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -117,7 +117,7 @@ a {
   font-size: 1.6rem;
   padding: 0.5rem 1.5rem;
 }
-@media screen (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -204,7 +204,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -272,7 +272,6 @@ a {
   padding: 1.5rem 3.5rem;
   color: var(--color-headings);
   font-size: 2rem;
-  width: 0;
 }
 ::placeholder {
   color: #cdcbd7;
@@ -281,11 +280,11 @@ a {
   display: flex;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  width: ;
 }
 .input-group input {
   border: none;
   flex-grow: 1;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -696,7 +695,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
@@ -801,6 +800,8 @@ a {
 }
 .footer__content--list li {
   margin: 1rem 0;
+}
+.footer__header {
 }
 @media screen and (min-width: 768px) {
   /* .footer:nth-of-type(even) .footer__content {
